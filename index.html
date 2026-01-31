@@ -1,117 +1,170 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Multimedia Blog</title>
-    <link rel="icon" href="logo1.png" />
-  </head>
 
-  <body>
-    <h1 class="title">MULTIMEDIA BLOG by <ins>TAP ACADEMY</ins> &#8482;</h1>
-    <hr />
-    <hr />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Multimedia Entertainment Hub - Explore favorite songs, movies, and trailers" />
+  <meta name="keywords" content="multimedia, entertainment, songs, movies, trailers, Prabhas films" />
+  <title>Multimedia Entertainment Hub | Songs & Movies</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <h2 class="sub">&raquo; All-Time Favourite Songs 🕺🎶</h2>
-    <audio class="audio" src="audio1.mp3" controls></audio><br /><br />
-    <audio class="audio" src="audio2.mp3" controls></audio><br /><br />
-    <audio class="audio" src="audio3.mp3" controls></audio>
+<body>
+  <!-- Animated Background -->
+  <div class="bg-effects" aria-hidden="true">
+    <div class="wave wave-1"></div>
+    <div class="wave wave-2"></div>
+    <div class="wave wave-3"></div>
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    <div class="floating-shape shape-3"></div>
+  </div>
 
-    <hr />
-    <h2 class="sub">
-      &raquo; <ins>Most Viewed Prabhas Movie Trailers</ins> &#9924;
-    </h2>
+  <!-- Header -->
+  <header class="header" role="banner">
+    <h1 class="title">
+      <span class="title-icon">🎬</span>
+      <span class="title-text">Multimedia Entertainment Hub</span>
+    </h1>
+    <p class="tagline">Songs • Movies • Trailers • Your Entertainment Destination</p>
+  </header>
 
-    <h2 class="sub"><strong>Movie 1</strong></h2>
-    <img
-      class="image"
-      src="image 1.webp"
-      alt="Baahubali Movie Poster"
-      width="300"
-      height="355"
-    />
-    <br /><br />
-    <video
-      class="video"
-      poster="poster 1.webp"
-      src="video1.mp4"
-      controls
-      width="600"
-      height="400"
-    ></video>
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Songs Section -->
+    <section class="section" id="songs" aria-labelledby="songs-heading">
+      <h2 id="songs-heading" class="section-title">
+        <span class="title-icon-small">🎶</span>
+        All-Time Favourite Songs
+      </h2>
 
-    <p class="para">
-      <mark
-        ><strong><em>Baahubali: The Beginning</em></strong></mark
-      >
-      is a 2015 Indian epic action film directed by S. S. Rajamouli and produced
-      by Arka Media Works. The film stars Prabhas in a dual role alongside Rana
-      Daggubati, Anushka Shetty, Tamannaah Bhatia, Ramya Krishnan, and
-      Sathyaraj. It follows the journey of Sivudu, an adventurous young man who
-      helps rescue Devasena, the princess of Kuntala.
+      <div class="media-grid audio-grid">
+        <article class="media-card audio-card">
+          <div class="audio-wrapper">
+            <div class="audio-icon">🎵</div>
+            <audio controls src="audio1.mp3" aria-label="Audio track 1">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </article>
+
+        <article class="media-card audio-card">
+          <div class="audio-wrapper">
+            <div class="audio-icon">🎵</div>
+            <audio controls src="audio2.mp3" aria-label="Audio track 2">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </article>
+
+        <article class="media-card audio-card">
+          <div class="audio-wrapper">
+            <div class="audio-icon">🎵</div>
+            <audio controls src="audio3.mp3" aria-label="Audio track 3">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Movies Section -->
+    <section class="section" id="movies" aria-labelledby="movies-heading">
+      <h2 id="movies-heading" class="section-title">
+        <span class="title-icon-small">🔥</span>
+        Most Popular Prabhas Movie Trailers
+      </h2>
+
+      <div class="movie-grid">
+        <!-- Movie Card 1: Baahubali -->
+        <article class="movie-card spotlight-card">
+          <div class="movie-poster-wrapper">
+            <img src="image 1.webp" alt="Baahubali movie poster" class="movie-poster" loading="lazy" />
+            <div class="poster-overlay"></div>
+          </div>
+
+          <div class="movie-info">
+            <h3 class="movie-title">Baahubali</h3>
+            <p class="movie-description">
+              Baahubali: The Beginning (2015) is an Indian epic action film directed by S. S. Rajamouli.
+              The film follows Sivudu, an adventurous young man who helps his love Avantika rescue Devasena,
+              the former queen of Mahishmati who is now a prisoner under the tyrannical rule of king Bhallaladeva.
+              This masterpiece redefined Indian cinema with its groundbreaking visual effects and became the
+              highest-grossing
+              Indian film at the time of its release.
+            </p>
+          </div>
+
+          <div class="video-container">
+            <video controls poster="poster 1.webp" src="video1.mp4" aria-label="Baahubali movie trailer">
+              Your browser does not support the video element.
+            </video>
+          </div>
+        </article>
+
+        <!-- Movie Card 2: Salaar -->
+        <article class="movie-card spotlight-card">
+          <div class="movie-poster-wrapper">
+            <img src="image 2.webp" alt="Salaar movie poster" class="movie-poster" loading="lazy" />
+            <div class="poster-overlay"></div>
+          </div>
+
+          <div class="movie-info">
+            <h3 class="movie-title">Salaar</h3>
+            <p class="movie-description">
+              Salaar: Part 1 – Ceasefire (2023) is an Indian action thriller film directed by Prashanth Neel.
+              The film stars Prabhas as Salaar, a gang leader who promises to help his friend Vardharaja Mannaar claim
+              his rightful position as the ruler of Khansaar, a fictional dystopian city-state. Known for its
+              high-octane
+              action sequences and intense performances, the film explores themes of friendship, loyalty, and power.
+            </p>
+          </div>
+
+          <div class="video-container">
+            <video controls poster="poster 2.webp" src="video2.mp4" aria-label="Salaar movie trailer">
+              Your browser does not support the video element.
+            </video>
+          </div>
+        </article>
+
+        <!-- Movie Card 3: The Raja Saab -->
+        <article class="movie-card spotlight-card">
+          <div class="movie-poster-wrapper">
+            <img src="image 3.webp" alt="The Raja Saab movie poster" class="movie-poster" loading="lazy" />
+            <div class="poster-overlay"></div>
+          </div>
+
+          <div class="movie-info">
+            <h3 class="movie-title">The Raja Saab</h3>
+            <p class="movie-description">
+              The Raja Saab (2025) is an upcoming Indian horror comedy film directed by Maruthi Dasari.
+              Prabhas stars in a unique dual role in this period fantasy entertainer that blends horror elements with
+              comedy.
+              Set in a royal backdrop, the film promises to showcase a never-seen-before avatar of Prabhas, combining
+              supernatural thrills with light-hearted moments in a genre-defying narrative.
+            </p>
+          </div>
+
+          <div class="video-container">
+            <video controls poster="poster 3.webp" src="video3.mp4" aria-label="The Raja Saab movie trailer">
+              Your browser does not support the video element.
+            </video>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <p class="footer-text">
+      ✨ More Entertainment Updates Coming Soon...
     </p>
-    <hr />
-
-    <h2 class="sub"><strong>Movie 2</strong></h2>
-    <img
-      class="image"
-      src="image 2.webp"
-      alt="Salaar Movie Poster"
-      width="300"
-      height="375"
-    />
-    <br /><br />
-    <video
-      class="video"
-      poster="poster 2.webp"
-      src="video2.mp4"
-      controls
-      width="600"
-      height="400"
-    ></video>
-
-    <p class="para">
-      <mark
-        ><strong><em>Salaar: Part 1 – Ceasefire</em></strong></mark
-      >
-      is a 2023 Indian Telugu-language action thriller directed by Prashanth
-      Neel and produced by Hombale Films. The film stars Prabhas and Prithviraj
-      Sukumaran. Set in the dystopian city of Khansaar, the story revolves
-      around friendship, power, and political conflict.
+    <p class="footer-copyright">
+      © 2026 Multimedia Hub. Crafted with passion.
     </p>
+  </footer>
+</body>
 
-    <hr />
-    <h2 class="sub"><strong>Movie 3</strong></h2>
-    <img
-      class="image"
-      src="image 3.webp"
-      alt="The Raja Saab Movie Poster"
-      width="300"
-      height="375"
-    />
-    <br /><br />
-    <video
-      class="video"
-      poster="poster 3.webp"
-      src="video3.mp4"
-      controls
-      width="600"
-      height="400"
-    ></video>
-
-    <p class="para">
-      <mark
-        ><strong><em>The Raja Saab</em></strong></mark
-      >
-      is an upcoming Indian fantasy horror comedy film directed by Maruthi. The
-      film stars Prabhas along with Sanjay Dutt and Boman Irani. The story
-      follows a man who discovers a haunted mansion while searching for his
-      missing grandfather.
-    </p>
-
-    <hr />
-    <h2 class="sub">MORE UPDATES COMING SOON...</h2>
-    <strong>Movie 4</strong>
-    <p class="para"><abbr title="Kolar Gold Fields">KGF</abbr> CHAPTER 3</p>
-  </body>
 </html>
